@@ -5,7 +5,7 @@ iTalentHR人力资源管理系统采用前后端分离方式进行开发，采�
 
 ## 功能模块图
 各个模块的功能介绍：
-![系统结构图](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2FiTalentHR.png)
+![系统结构图](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/iTalentHR.png)
 - **功能补充：**
 - 报表技术
   采用多种报表技术(ApachePOI,JasperReport)实现企业人力资源各项数据统计汇总，包括传统的Excel报表及PDF报表生成，POI报表的优化技术。
@@ -41,34 +41,34 @@ iTalentHR人力资源管理系统采用前后端分离方式进行开发，采�
 
 ## 项目截图
 ### 首页登录
-![账号密码登录](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Findex.png)
-![刷脸扫码登录](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Fshualianlogin.png)
+![账号密码登录](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/index.png)
+![刷脸扫码登录](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/shualianlogin.png)
 ### SaaS管理员模块
 
-![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Fadmin-index.png)
-![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Fadmin-company.png)
+![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/admin-index.png)
+![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/admin-company.png)
 
 ### 企业管理员模块
-![首页](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Fmindex.png)
-![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Fmodel-1.png)
+![首页](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/mindex.png)
+![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/model-1.png)
 
-![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Fmodel-2.png)
+![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/model-2.png)
 
-![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Fmodel-3.png)
+![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/model-3.png)
 
-![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Fmodel-4.png)
+![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/model-4.png)
 
-![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Fmodel-5.png)
+![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/model-5.png)
 
 ![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/model-6.png)
 
-![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Fmodel-7.png)
+![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/model-7.png)
 
-![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Fmodel-8.png)
+![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/model-8.png)
 
 ### 员工模块
-![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Fyuangong.png)
-![员工信息PDF打印](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Fpdf.png)
+![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/yuangong.png)
+![员工信息PDF打印](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/pdf.png)
 
 ---
 ## 系统架构
@@ -78,7 +78,7 @@ iTalentHR人力资源管理系统采用前后端分离方式进行开发，采�
 ---
 ## 微服务模块
 
-![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme%2Frun%2Fproject.png)
+![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/project.png)
 
 各个模块的功能介绍：
 
