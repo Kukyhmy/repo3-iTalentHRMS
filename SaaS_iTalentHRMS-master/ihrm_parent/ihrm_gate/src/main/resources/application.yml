@@ -1,0 +1,95 @@
+#注册到eureka的服务地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+    perferIpAddress : true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+#服务配置
+server:
+  port: 9091
+#spring配置
+spring:
+  #1.应用配置
+  application:
+    name: ihrm-gate #指定服务名
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: abc123456
+  main:
+    allow-bean-definition-overriding: true
+#配置路由规则
+zuul:
+  host:
+    connect-timeout-millis: 60000  #HTTP连接超时要比Hystrix的大
+    socket-timeout-millis: 60000  #socket超时
+  routes:
+    #路由id
+    ihrm-company:
+      path: /company/** #需要映射的路径地址
+      #url: http://127.0.0.1:9001  #映射路径对应的实际微服务的url路径
+      serviceId: ihrm-company
+      stripPrefix: false  #不删除请求前缀
+      #处理敏感头信息
+      sentiviteHeaders:   #将指定路由的敏感头设置为空
+      customSensitiveHeaders: true #对指定路由开启自定义敏感头
+    ihrm-system: #系统
+      path: /sys/** #配置请求URL的请求规则
+      serviceId: ihrm-system #指定Eureka注册中心中的服务id
+      stripPrefix: false
+      sentiviteHeaders:   #将指定路由的敏感头设置为空
+      customSensitiveHeaders: true #对指定路由开启自定义敏感头
+    ihrm-employee: #员工
+      path: /employees/** #配置请求URL的请求规则
+      serviceId: ihrm-employee #指定Eureka注册中心中的服务id
+      stripPrefix: false
+      sentiviteHeaders:   #将指定路由的敏感头设置为空
+      customSensitiveHeaders: true #对指定路由开启自定义敏感头
+    ihrm-social-securitys: #社保
+      path: /social_securitys/** #配置请求URL的请求规则
+      serviceId: ihrm-social-securitys #指定Eureka注册中心中的服务id
+      stripPrefix: false
+      sentiviteHeaders:   #将指定路由的敏感头设置为空
+      customSensitiveHeaders: true #对指定路由开启自定义敏感头
+    ihrm-atte-cfg: #考勤配置
+      path: /cfg/** #配置请求URL的请求规则
+      serviceId: ihrm-attendance #指定Eureka注册中心中的服务id
+      stripPrefix: false
+      sentiviteHeaders:   #将指定路由的敏感头设置为空
+      customSensitiveHeaders: true #对指定路由开启自定义敏感头
+    ihrm-atte-attendances: #考勤管理
+      path: /attendances/** #配置请求URL的请求规则
+      serviceId: ihrm-attendance #指定Eureka注册中心中的服务id
+      stripPrefix: false
+      sentiviteHeaders:   #将指定路由的敏感头设置为空
+      customSensitiveHeaders: true #对指定路由开启自定义敏感头
+    ihrm-salarys: #薪资管理
+      path: /salarys/** #配置请求URL的请求规则
+      serviceId: ihrm-salarys #指定Eureka注册中心中的服务id
+      stripPrefix: false
+      sentiviteHeaders:   #将指定路由的敏感头设置为空
+      customSensitiveHeaders: true #对指定路由开启自定义敏感头
+    ihrm-user-audit: #用户自助-审批
+      path: /user/** #配置请求URL的请求规则
+      serviceId: ihrm-audit #指定Eureka注册中心中的服务id
+      stripPrefix: false
+      sentiviteHeaders:   #将指定路由的敏感头设置为空
+      customSensitiveHeaders: true #对指定路由开启自定义敏感头
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 240000
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 1
+  eureka:
+    enabled: true
