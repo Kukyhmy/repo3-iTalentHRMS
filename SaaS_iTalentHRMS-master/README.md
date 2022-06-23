@@ -43,6 +43,7 @@ iTalentHR人力资源管理系统采用前后端分离方式进行开发，采�
 ### 首页登录
 
 ![账号密码登录](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/index.png)
+
 ![刷脸扫码登录](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/shualianlogin.png)
 ### SaaS管理员模块
 
@@ -51,6 +52,7 @@ iTalentHR人力资源管理系统采用前后端分离方式进行开发，采�
 
 ### 企业管理员模块
 ![首页](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/mindex.png)
+
 ![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/model-1.png)
 
 ![](http://rdpzpf4g4.hn-bkt.clouddn.com/readme/run/model-2.png)
